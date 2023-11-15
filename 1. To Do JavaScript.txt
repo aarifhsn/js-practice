@@ -1,0 +1,39 @@
+### TODO: JavaScript Fundamental Concepts
+
+- Functions:
+  - [ ] Declaration and invocation of functions.
+  - [ ] Arrow functions and function expressions.
+  - [ ] Higher-order functions and callbacks.
+
+- Objects and Object-Oriented Concepts:
+  - [ ] Understanding objects, properties, and methods.
+  - [ ] Prototypes and prototypal inheritance.
+  - [ ] ES6 Classes.
+
+- Asynchronous JavaScript:
+  - [ ] Promises and async/await.
+  - [ ] Working with asynchronous operations (e.g., setTimeout, fetch).
+
+- Arrays and Array Methods:
+  - [ ] Basic array operations (e.g., push, pop, slice).
+  - [ ] Functional array methods (e.g., map, filter, reduce).
+
+- Modules and Module Systems:
+  - [ ] ES6 Modules (import and export).
+  - [ ] Module bundlers like Webpack and Rollup.
+
+- DOM Manipulation:
+  - [ ] Accessing and manipulating the Document Object Model (DOM) in web pages.
+
+- Event Handling:
+  - [ ] Responding to user interactions (e.g., clicks, mouse movements) in the browser.
+
+- Error Handling:
+  - [ ] Exploring error handling methods beyond try...catch, like throw and custom errors.
+
+- ES6/ESNext Features:
+  - [ ] Destructuring, spread/rest operators, template literals, etc.
+  - [ ] Familiarizing with new features introduced in ES6 and upcoming ECMAScript versions.
+
+- Browser APIs:
+  - [ ] Working with browser APIs like localStorage, sessionStorage, IndexedDB, WebSockets, etc.
