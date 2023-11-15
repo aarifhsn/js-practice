@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .slider {margin: 10px auto; width: 80%; text-align: center; display: block; 
+            display: flex; justify-content: center;align-items: center;}
+        .slider_button {margin: 10px auto; width: 80%; text-align: center; display: block; 
+            display: flex; justify-content: center;align-items: center;}
+        .slider_button button {
+            margin-right: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            color: red;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="slider">
+        <img style="display: block;" src="img/img (7).jpg" alt="">
+    </div>
+    <div class="slider_button">
+     <button class="prev" onclick="prev()">Previous</button>
+     <button class="next" onclick="next()">Next</button>
+    </div>
+
+
+    <script src="slider.js"></script>
+</body>
+</html>

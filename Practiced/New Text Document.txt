@@ -1,0 +1,15 @@
+Number:
+
+1. string to number-
+	var num = "20";
+	পূর্ণ সংখ্যাকে নাম্বার এ কনভার্ট-> parseInt(num);
+	দশমিক সংখ্যাকে নাম্বারে কনভার্ট-> parseFloat(num);
+	
+
+	number= 2.3456;
+	দশমিকের পরে কতঘর দেখতে চাই- toFixed . ex-> number.toFixed(2); result- 2.34;
+
+	টোটাল কতটি নাম্বার দেখতে চাই- toPrecision- ex-> 	number.toPrecision(1); result- 3;
+							number.toPrecision(2); result- 2.3;
+							number.toPrecision(1); result- 3.35;
+ 
