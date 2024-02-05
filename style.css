@@ -1,3 +1,11 @@
 
 /* adding and removing style onclick */
 .para_add {border: 1px solid #ddd; padding: 5px; color: red}
+
+.btn_click {
+    color: black;
+    background: yellow;
+    border: 2px solid yellow;
+    box-shadow: -1px 1px;
+    padding: 2px 5px;
+}

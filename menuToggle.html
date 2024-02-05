@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <title>Toggle Span Visibility</title>
+  </head>
+  <body>
+    <div id="spanContainer">
+      <span class="toggle">Click me to hide the other</span>
+      <span class="toggle">Click me to hide the other</span>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const spanContainer = document.getElementById("spanContainer");
+
+        spanContainer.addEventListener("click", function (event) {
+          const clickedSpan = event.target;
+
+          if (clickedSpan.classList.contains("toggle")) {
+            toggleVisibility(clickedSpan);
+          }
+        });
+
+        function toggleVisibility(clickedSpan) {
+          const spans = document.querySelectorAll(".toggle");
+
+          spans.forEach(function (span) {
+            if (span !== clickedSpan) {
+              span.classList.toggle("hidden");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

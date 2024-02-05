@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <title>Toggle Area Visibility</title>
+  </head>
+  <body>
+    <i class="icon" id="icon1">Icon 1</i>
+    <i class="icon" id="icon2">Icon 2</i>
+
+    <div class="area" id="area1">
+      Area 1 - Click an icon to hide the other area
+    </div>
+    <div class="area" id="area2">
+      Area 2 - Click an icon to hide the other area
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const icons = document.querySelectorAll(".icon");
+        const areas = document.querySelectorAll(".area");
+
+        icons.forEach(function (icon, index) {
+          icon.addEventListener("click", function () {
+            // Hide all areas
+            areas.forEach(function (area) {
+              area.classList.add("hidden");
+            });
+
+            // Show the corresponding area
+            const associatedArea = document.getElementById(`area${index + 1}`);
+            if (associatedArea) {
+              associatedArea.classList.remove("hidden");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

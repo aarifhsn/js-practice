@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Current Weather</title>
+  </head>
+  <body
+    class="h-screen overflow-hidden flex items-center justify-center bg-center bg-cover"
+    style="
+      background-color: #edf2f7;
+      background-image: url(images/background.jpg);
+    "
+  >
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="flex flex-col bg-white rounded p-4 w-full max-w-xs">
+        <div class="search my-4 flex justify-between">
+          <input
+            type="search"
+            name="Search"
+            id="search"
+            placeholder="Enter City Name"
+            class="border border-2 border-slate-400 p-2 rounded"
+            spellcheck="false"
+          />
+          <button
+            type="submit"
+            class="border border-2 border-slate-400 py-2 px-4 rounded font-bold text-sm"
+          >
+            Search
+          </button>
+        </div>
+        <div class="error_msg hidden">
+          <h3 class="text-red-600 text-sm">Invalid City Name</h3>
+        </div>
+        <div class="weather_content flex flex-col hidden">
+          <div class="city font-bold text-xl">Sydney</div>
+          <div class="date text-sm text-gray-500">Thursday 10 May 2020</div>
+          <div class="flex justify-center text-6xl rounded-lg text-indigo-400">
+            <img
+              class="weather_icon w-32 h-32"
+              src="images/clouds.png"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-row items-center justify-center">
+            <div class="temperature font-medium text-6xl">10°</div>
+            <div class="flex flex-col items-center ml-6">
+              <div class="phrase">Cloudy</div>
+              <div class="mt-1">
+                <span class="text-sm"
+                  ><i class="far fa-long-arrow-up"></i
+                ></span>
+                <span class="temp_max text-sm font-light text-gray-500"
+                  >28°C</span
+                >
+              </div>
+              <div>
+                <span class="text-sm"
+                  ><i class="far fa-long-arrow-down"></i
+                ></span>
+                <span class="temp_min text-sm font-light text-gray-500"
+                  >10°C</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row justify-between mt-6">
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Wind</div>
+              <div class="wind_speed text-sm text-gray-500">9k/h</div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Humidity</div>
+              <div class="humidity text-sm text-gray-500">01%</div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Visibility</div>
+              <div class="visibility text-sm text-gray-500">10km</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
